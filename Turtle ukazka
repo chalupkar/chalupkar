@@ -1,0 +1,14 @@
+import turtle             # rozšírenie Pythonu o príkazy korytnačej grafiky
+
+pero = turtle.Turtle()    # vytvorí sa grafické pero s menom "pero"
+tabula = turtle.Screen()  # vytvorí sa grafická plocha s menom "tabula"
+
+for i in range(8):
+    pero.left(15)
+    pero.pensize(2)           # nastaví sa hrúbka pera na 5 bodov
+    pero.forward(200) 
+  
+    pero.left(15)        # pero sa posunie o 100 bodov dopredu
+    pero.forward(-200)        # pero sa posunie o 100 bodov vzad
+
+tabula.mainloop()     
